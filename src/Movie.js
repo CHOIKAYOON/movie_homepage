@@ -1,9 +1,10 @@
 import React  from 'react';
+import MovieContent from './MovieContent';
 import './Movie.css';
 
 function Movie ({title, poster, genres, synopsis}){
     return(
-        <div className ="Movie_Columns">
+        <div className ="Movie_Columns" >
             <div className ="Movie_Columns_poster">
                 <MoviePoster poster={poster} alt ={title}/>
             </div>
@@ -18,20 +19,21 @@ function Movie ({title, poster, genres, synopsis}){
             </div>            
         </div>
     )
-
 }
 
 
 function MoviePoster({poster, alt}){
     return(
         <img src ={poster} alt={alt} title={alt} className="Movie-poster"/> 
-    )
-}
-
-function Movies_Genres({genres}){
-    return(
+        )
+    }
+    
+    function Movies_Genres({genres}){
+        return(
         <span className="Movie_Genres">{genres}</span>
     )
 }
+
+
 
 export default Movie;

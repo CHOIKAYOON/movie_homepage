@@ -1,6 +1,6 @@
 .Movie_Columns{
     margin: 200px;
-    height: 1700px;;
+    height: 1300px;;
     width: 780px;
     float: left;
     background: white;
@@ -12,28 +12,33 @@
 body{
     background-color: #eff3f7;
 }
-
-.Movie_Columns_poster img{
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 .Movie_Columns_title h1{
     text-align: center;
+    font-size: 40px;
 }
 
 .Movie_Columns_title{
     margin: 100px 40px auto;
 }
 
-.Movies_synopsis p{
+ p{
+    width: 700px;
+    height: 700px;
     text-align: center;
+    font-size: 32px;
+    max-height: 14em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
 }
 
 .Movie_Columns_Genres{
     text-align: center;
+}
+
+.Movie_Columns_Genres span{
+    font-size: 35px;
 }
 
 .Movie_Columns_poster img{
@@ -41,4 +46,8 @@ body{
     height: 600px;
     margin-top: -100px;
     border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(11px 18px 12px black);
 }

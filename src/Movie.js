@@ -1,6 +1,6 @@
-import React  from 'react';
-import MovieContent from './MovieContent';
+import React, { Component } from 'react';
 import './Movie.css';
+
 
 function Movie ({title, poster, genres, synopsis}){
     return(
@@ -28,12 +28,10 @@ function MoviePoster({poster, alt}){
         )
     }
     
-    function Movies_Genres({genres}){
-        return(
-        <span className="Movie_Genres">{genres}</span>
+function Movies_Genres({genres}){
+    return(
+    <span className="Movie_Genres">{genres}</span>
     )
 }
-
-
 
 export default Movie;

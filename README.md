@@ -13,6 +13,6 @@
 
 * Movie.js
   * MoviePoster function : 영화 이미지를 담는 함수.
-  * Movies_Genres function : 영화 줄거리(span)를 담는 함수
+  * Movies_Genres function : 영화 줄거리 담는 함수
 
 
